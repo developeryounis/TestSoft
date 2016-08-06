@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>The current request for action 'Add' on controller type 'RegisterController' is ambiguous between the following action methods:<br>System.Web.Mvc.ActionResult Add(Store.Domain.Person) on type Store.Controllers.RegisterController<br>System.Web.Mvc.ActionResult Add(System.String) on type Store.Controllers.RegisterController</title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        body {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: .7em;
+            color: black;
+        }
+
+        p {
+            font-family: "Verdana";
+            font-weight: normal;
+            color: black;
+            margin-top: -5px;
+        }
+
+        b {
+            font-family: "Verdana";
+            font-weight: bold;
+            color: black;
+            margin-top: -5px;
+        }
+
+        H1 {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: 18pt;
+            color: red;
+        }
+
+        H2 {
+            font-family: "Verdana";
+            font-weight: normal;
+            font-size: 14pt;
+            color: maroon;
+        }
+
+        pre {
+            font-family: "Consolas","Lucida Console",Monospace;
+            font-size: 11pt;
+            margin: 0;
+            padding: 0.5em;
+            line-height: 14pt;
+        }
+
+        .marker {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .version {
+            color: gray;
+        }
+
+        .error {
+            margin-bottom: 10px;
+        }
+
+        .expandable {
+            text-decoration: underline;
+            font-weight: bold;
+            color: navy;
+            cursor: hand;
+        }
+
+        @media screen and (max-width: 639px) {
+            pre {
+                width: 440px;
+                overflow: auto;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            pre {
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="white">
+
+    <span>
+        <h1>Server Error in '/' Application.<hr width=100% size=1 color=silver></h1>
+
+        <h2> <i>The current request for action 'Add' on controller type 'RegisterController' is ambiguous between the following action methods:<br>System.Web.Mvc.ActionResult Add(Store.Domain.Person) on type Store.Controllers.RegisterController<br>System.Web.Mvc.ActionResult Add(System.String) on type Store.Controllers.RegisterController</i> </h2>
+    </span>
+
+    <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+        <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+        <br><br>
+
+        <b> Exception Details: </b>System.Reflection.AmbiguousMatchException: The current request for action 'Add' on controller type 'RegisterController' is ambiguous between the following action methods:<br>System.Web.Mvc.ActionResult Add(Store.Domain.Person) on type Store.Controllers.RegisterController<br>System.Web.Mvc.ActionResult Add(System.String) on type Store.Controllers.RegisterController<br><br>
+
+        <b>Source Error:</b> <br><br>
+
+        <table width=100% bgcolor="#ffffcc">
+            <tr>
+                <td>
+                    <code>
+
+                        An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.
+                    </code>
+
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <b>Stack Trace:</b> <br><br>
+
+        <table width=100% bgcolor="#ffffcc">
+            <tr>
+                <td>
+                    <code>
+                        <pre>
+[AmbiguousMatchException: The current request for action &#39;Add&#39; on controller type &#39;RegisterController&#39; is ambiguous between the following action methods:
+System.Web.Mvc.ActionResult Add(Store.Domain.Person) on type Store.Controllers.RegisterController
+System.Web.Mvc.ActionResult Add(System.String) on type Store.Controllers.RegisterController]
+   System.Web.Mvc.ActionMethodSelectorBase.FindActionMethod(ControllerContext controllerContext, String actionName) +258
+   System.Web.Mvc.Async.AsyncActionMethodSelector.FindAction(ControllerContext controllerContext, String actionName) +56
+   System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(ControllerContext controllerContext, String actionName) +181
+   System.Web.Mvc.ControllerActionInvoker.FindAction(ControllerContext controllerContext, ControllerDescriptor controllerDescriptor, String actionName) +383
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(ControllerContext controllerContext, String actionName, AsyncCallback callback, Object state) +329
+   System.Web.Mvc.Controller.&lt;BeginExecuteCore&gt;b__1c(AsyncCallback asyncCallback, Object asyncState, ExecuteCoreState innerState) +82
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState) +73
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +151
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext) +105
+   System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state) +588
+   System.Web.Mvc.Controller.&lt;BeginExecute&gt;b__14(AsyncCallback asyncCallback, Object callbackState, Controller controller) +47
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState) +65
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +151
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext) +139
+   System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state) +484
+   System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state) +50
+   System.Web.Mvc.MvcHandler.&lt;BeginProcessRequest&gt;b__4(AsyncCallback asyncCallback, Object asyncState, ProcessRequestState innerState) +98
+   System.Web.Mvc.Async.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState) +73
+   System.Web.Mvc.Async.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +151
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext) +106
+   System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state) +446
+   System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state) +88
+   System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData) +50
+   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +301
+   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +155
+</pre>
+                    </code>
+
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <hr width=100% size=1 color=silver>
+
+        <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.0.30319.33440
+
+    </font>
+
+</body>
+</html>
+<!--
+[AmbiguousMatchException]: The current request for action &#39;Add&#39; on controller type &#39;RegisterController&#39; is ambiguous between the following action methods:
+System.Web.Mvc.ActionResult Add(Store.Domain.Person) on type Store.Controllers.RegisterController
+System.Web.Mvc.ActionResult Add(System.String) on type Store.Controllers.RegisterController
+   at System.Web.Mvc.ActionMethodSelectorBase.FindActionMethod(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Async.AsyncActionMethodSelector.FindAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.ControllerActionInvoker.FindAction(ControllerContext controllerContext, ControllerDescriptor controllerDescriptor, String actionName)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(ControllerContext controllerContext, String actionName, AsyncCallback callback, Object state)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1c(AsyncCallback asyncCallback, Object asyncState, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TState](AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Controller.<BeginExecute>b__14(AsyncCallback asyncCallback, Object callbackState, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TState](AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__4(AsyncCallback asyncCallback, Object asyncState, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallBeginDelegate(AsyncCallback callback, Object callbackState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TState](AsyncCallback callback, Object callbackState, BeginInvokeDelegate`1 beginDelegate, EndInvokeVoidDelegate`1 endDelegate, TState invokeState, Object tag, Int32 timeout, SynchronizationContext callbackSyncContext)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+-->

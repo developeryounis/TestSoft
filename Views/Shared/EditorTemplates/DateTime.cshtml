@@ -1,0 +1,2 @@
+﻿@model DateTime?
+@Html.TextBox("", Model.HasValue ? Model.Value.ToString("dd-MMM-yyyy") : "", new { @class = "form-control", @readonly = "readonly", placeholder = "Date of Barth",data_datebaker="true" }) 
